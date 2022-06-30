@@ -1,0 +1,6 @@
+framework module ScanzyBarcodeScannerSDK {
+    umbrella header "ScanzyBarcodeScannerSDK.h"
+
+    export *
+    module * { export * }
+}

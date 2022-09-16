@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		985DDC02790A527BBBAFABB8 /* Pods_scanzy_barcodescanner_sample_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76FEFB631F9E83D9E1846CF /* Pods_scanzy_barcodescanner_sample_ios.framework */; };
 		A8028861286C3DBB000583CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8028860286C3DBB000583CA /* AppDelegate.swift */; };
 		A8028863286C3DBB000583CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8028862286C3DBB000583CA /* SceneDelegate.swift */; };
 		A8028865286C3DBB000583CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8028864286C3DBB000583CA /* ViewController.swift */; };
 		A8028868286C3DBB000583CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8028866286C3DBB000583CA /* Main.storyboard */; };
 		A802886A286C3DBF000583CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8028869286C3DBF000583CA /* Assets.xcassets */; };
 		A802886D286C3DBF000583CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A802886B286C3DBF000583CA /* LaunchScreen.storyboard */; };
-		A8028875286C3DEA000583CA /* ScanzyBarcodeScannerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8028874286C3DEA000583CA /* ScanzyBarcodeScannerSDK.framework */; };
-		A8028878286C3E60000583CA /* ScanzyBarcodeScannerSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A8028877286C3E60000583CA /* ScanzyBarcodeScannerSDK.bundle */; };
 		A802887B286C43DD000583CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A802887A286C43DD000583CA /* AVFoundation.framework */; };
 		A802887D286C43E6000583CA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A802887C286C43E6000583CA /* CoreMedia.framework */; };
 		A802887F286C43EF000583CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A802887E286C43EF000583CA /* libc++.tbd */; };
@@ -22,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EAEDB1A5CC72234BD5F056C /* Pods-scanzy-barcodescanner-sample-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanzy-barcodescanner-sample-ios.debug.xcconfig"; path = "Target Support Files/Pods-scanzy-barcodescanner-sample-ios/Pods-scanzy-barcodescanner-sample-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		A802885D286C3DBB000583CA /* scanzy-barcodescanner-sample-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scanzy-barcodescanner-sample-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8028860286C3DBB000583CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8028862286C3DBB000583CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,14 +30,14 @@
 		A8028869286C3DBF000583CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A802886C286C3DBF000583CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A802886E286C3DBF000583CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8028874286C3DEA000583CA /* ScanzyBarcodeScannerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanzyBarcodeScannerSDK.framework; sourceTree = "<group>"; };
-		A8028877286C3E60000583CA /* ScanzyBarcodeScannerSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ScanzyBarcodeScannerSDK.bundle; path = "scanzy-barcodescanner-sample-ios/ScanzyBarcodeScannerSDK.framework/ScanzyBarcodeScannerSDK.bundle"; sourceTree = "<group>"; };
 		A802887A286C43DD000583CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A802887C286C43E6000583CA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A802887E286C43EF000583CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A8028880286C4410000583CA /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 		A8028882286C4423000583CA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		A8028884286C444C000583CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AFC1B4C4499205FBA1BDC877 /* Pods-scanzy-barcodescanner-sample-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scanzy-barcodescanner-sample-ios.release.xcconfig"; path = "Target Support Files/Pods-scanzy-barcodescanner-sample-ios/Pods-scanzy-barcodescanner-sample-ios.release.xcconfig"; sourceTree = "<group>"; };
+		E76FEFB631F9E83D9E1846CF /* Pods_scanzy_barcodescanner_sample_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scanzy_barcodescanner_sample_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,20 +49,30 @@
 				A802887F286C43EF000583CA /* libc++.tbd in Frameworks */,
 				A802887D286C43E6000583CA /* CoreMedia.framework in Frameworks */,
 				A802887B286C43DD000583CA /* AVFoundation.framework in Frameworks */,
-				A8028875286C3DEA000583CA /* ScanzyBarcodeScannerSDK.framework in Frameworks */,
+				985DDC02790A527BBBAFABB8 /* Pods_scanzy_barcodescanner_sample_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A5D4A899BB00FDE30F0657F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EAEDB1A5CC72234BD5F056C /* Pods-scanzy-barcodescanner-sample-ios.debug.xcconfig */,
+				AFC1B4C4499205FBA1BDC877 /* Pods-scanzy-barcodescanner-sample-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A8028854286C3DBB000583CA = {
 			isa = PBXGroup;
 			children = (
-				A8028877286C3E60000583CA /* ScanzyBarcodeScannerSDK.bundle */,
 				A802885F286C3DBB000583CA /* scanzy-barcodescanner-sample-ios */,
 				A802885E286C3DBB000583CA /* Products */,
 				A8028879286C43DC000583CA /* Frameworks */,
+				3A5D4A899BB00FDE30F0657F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +94,6 @@
 				A8028869286C3DBF000583CA /* Assets.xcassets */,
 				A802886B286C3DBF000583CA /* LaunchScreen.storyboard */,
 				A802886E286C3DBF000583CA /* Info.plist */,
-				A8028874286C3DEA000583CA /* ScanzyBarcodeScannerSDK.framework */,
 			);
 			path = "scanzy-barcodescanner-sample-ios";
 			sourceTree = "<group>";
@@ -98,6 +107,7 @@
 				A802887E286C43EF000583CA /* libc++.tbd */,
 				A802887C286C43E6000583CA /* CoreMedia.framework */,
 				A802887A286C43DD000583CA /* AVFoundation.framework */,
+				E76FEFB631F9E83D9E1846CF /* Pods_scanzy_barcodescanner_sample_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8028871286C3DBF000583CA /* Build configuration list for PBXNativeTarget "scanzy-barcodescanner-sample-ios" */;
 			buildPhases = (
+				B576554CE522D69D10100857 /* [CP] Check Pods Manifest.lock */,
 				A8028859286C3DBB000583CA /* Sources */,
 				A802885A286C3DBB000583CA /* Frameworks */,
 				A802885B286C3DBB000583CA /* Resources */,
+				E870CB5346D186FED1CDEC0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8028878286C3E60000583CA /* ScanzyBarcodeScannerSDK.bundle in Resources */,
 				A802886D286C3DBF000583CA /* LaunchScreen.storyboard in Resources */,
 				A802886A286C3DBF000583CA /* Assets.xcassets in Resources */,
 				A8028868286C3DBB000583CA /* Main.storyboard in Resources */,
@@ -168,6 +179,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B576554CE522D69D10100857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scanzy-barcodescanner-sample-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E870CB5346D186FED1CDEC0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanzy-barcodescanner-sample-ios/Pods-scanzy-barcodescanner-sample-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scanzy-barcodescanner-sample-ios/Pods-scanzy-barcodescanner-sample-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scanzy-barcodescanner-sample-ios/Pods-scanzy-barcodescanner-sample-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8028859286C3DBB000583CA /* Sources */ = {
@@ -320,11 +373,12 @@
 		};
 		A8028872286C3DBF000583CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EAEDB1A5CC72234BD5F056C /* Pods-scanzy-barcodescanner-sample-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EDB6DVCRFR;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -344,9 +398,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inventorylab.barcoder;
+				PRODUCT_BUNDLE_IDENTIFIER = "scanzy-barcodescanner-sample-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ILBarcoder_development;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,11 +409,12 @@
 		};
 		A8028873286C3DBF000583CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC1B4C4499205FBA1BDC877 /* Pods-scanzy-barcodescanner-sample-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EDB6DVCRFR;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -379,9 +434,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.inventorylab.barcoder;
+				PRODUCT_BUNDLE_IDENTIFIER = "scanzy-barcodescanner-sample-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ILBarcoder_development;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

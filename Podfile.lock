@@ -1,0 +1,16 @@
+PODS:
+  - ScanzyBarcodeScannerSDK (0.0.2)
+
+DEPENDENCIES:
+  - ScanzyBarcodeScannerSDK (~> 0.0.2)
+
+SPEC REPOS:
+  trunk:
+    - ScanzyBarcodeScannerSDK
+
+SPEC CHECKSUMS:
+  ScanzyBarcodeScannerSDK: a82542fd54ef4bd51bf577ea08cdae96f275d0eb
+
+PODFILE CHECKSUM: 9ff7243f8958a60e065586026a5ff24865a29593
+
+COCOAPODS: 1.11.3

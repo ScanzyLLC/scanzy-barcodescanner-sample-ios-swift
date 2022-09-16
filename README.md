@@ -28,7 +28,6 @@ For example, the code in the sample app:
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        ScanzyBSLicense.setLicense("your-valid-licensekey")
         ScanzyBarcodeManager.setLicense("BdyCh9eyxw$9#k2qX79Z") //NOTE: BdyCh9eyxw$9#k2qX79Z is just a 7 days free trial key, you should purchase a valid key from Scanzy
         return true
     }

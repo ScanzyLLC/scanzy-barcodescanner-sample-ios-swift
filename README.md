@@ -2,23 +2,23 @@
 native ios sample to use ScanzyBarcodeScannerSDK
 
 
-Follow below steps to use ScanzyBarcodeScannerSDK.
+## Get Started
 
-## Install ScanzyBarcodeScannerSDK.framework
+### Install ScanzyBarcodeScannerSDK
 
-1. download ScanzyBarcodeScannerSDK.framework from XXX.
-2. put the ScanzyBarcodeScannerSDK.framework to root folder in your app (or any other places within your app).
-3. drag the ScanzyBarcodeScannerSDK.framework to your project's left navigator panel in XCode. 
-4. add resources ScanzyBarcodeScannerSDK.framework/ScanzyBarcodeScannerSDK.bundle to your resources bundle.
-5. add AVFoundation.framework, CoreMedia.framework, AudioToolbox.framework, libc++.tbd to your project.
+Add below pod to the Podfile under your project root folder, (create the Podfile file if it doesn't exist)
+
+```
+pod 'ScanzyBarcodeScannerSDK', '~> 0.0.2'
+```
 
 
-## Start to scan. (swift code example)
+### Start to scan. (swift code example)
 
 1. In your app's entry point, such as application func in AppDelegate, set the license key you obtained from Scanzy.
 
 ```swift
-ScanzyBSLicense.setLicense("your-valid-licensekey")
+ScanzyBarcodeManager.setLicense("your-valid-licensekey")
 ```
 
 For example, the code in the sample app:
@@ -28,7 +28,7 @@ For example, the code in the sample app:
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        ScanzyBSLicense.setLicense("your-valid-licensekey")
+        ScanzyBarcodeManager.setLicense("BdyCh9eyxw$9#k2qX79Z") //NOTE: BdyCh9eyxw$9#k2qX79Z is just a 7 days free trial key, you should purchase a valid key from Scanzy
         return true
     }
     
@@ -56,63 +56,23 @@ In the specific place, such as button click in the view, launch the scan view:
 import ScanzyBarcodeScannerSDK
 
  @IBAction func barcode_scan(_ sender: Any) {
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            if(self.scanView == nil){
-                let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE]
-            
-                let barcodeOptions = ScanzyBSBarcodeOptions(
-                    options: formats,
-                    vibrate: true,
-                    beep: true,
-                    autoZoom:true,
-                    scanCropRectOnly: true)
-                
-                self.scanView = ScanzyBSBarcodePicker.init(options: barcodeOptions)
-                self.scanView?.delegate = self
-                self.present(
-                    self.scanView!,
-                    animated: true,
-                    completion: nil
-                )
+        let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE]
+        let barcodeOptions = ScanzyBSBarcodeOptions(
+            options: formats,
+            vibrate: true,
+            beep: true,
+            autoZoom:true,
+            scanCropRectOnly: true)
+        
+        //presentedBy: the view class which used to present the scan UI, such as self of this view controller
+        //barcodeResultDelegate: the class which implements the func getBarcode(_ barcode: String) protocol
+        ScanzyBarcodeManager.scan(barcodeOptions, presentedBy: self, barcodeResultDelegate: self)
  }
 ```
 
-Firstly, you need to specify the barcode formats you would like to support, and other options.
-
-```swift
-let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE]
-let barcodeOptions = ScanzyBSBarcodeOptions(
-                    options: formats,
-                    vibrate: true,
-                    beep: true,
-                    autoZoom:true,
-                    scanCropRectOnly: true)
-```
-
-Create a barcode scan view with the barcodeOptions:
-
-```swift
-var scanView: ScanzyBSBarcodePicker? = nil
-self.scanView = ScanzyBSBarcodePicker.init(options: barcodeOptions)
-```
-
-Set the scanview delegate to self(the current viewController), so that scanview knows how to return the barcode back.
-```swift
-self.scanView?.delegate = self
-```
-
-Finally, present the scanview:
-
-```swift
-self.present(
-                    self.scanView!,
-                    animated: true,
-                    completion: nil
-                )
-```
-
-
 That is all you need to use ScanzyBarcodeScannerSDK, happy coding :joy:
+
+## API Specification
 
 Below gives you more details about the parameters:
 

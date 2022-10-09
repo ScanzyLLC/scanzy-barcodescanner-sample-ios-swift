@@ -9,8 +9,9 @@ import UIKit
 import ScanzyBarcodeScannerSDK
 
 class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
-    func getBarcode(_ barcode: String) {
-        let dialogMessage = UIAlertController(title: "Barcode", message: barcode, preferredStyle: .alert)
+   
+    func getBarcode(_ barcode: String,barcodeType: String) {
+        let dialogMessage = UIAlertController(title: "Barcode & Type", message: barcode + " Type: " + barcodeType, preferredStyle: .alert)
         // Create OK button with action handler
          let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
              print("Ok button tapped")
@@ -26,7 +27,7 @@ class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
     
     @IBAction func barcode_scan(_ sender: Any) {
         
-        let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE]
+        let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE, .QRCode]
         let barcodeOptions = ScanzyBSBarcodeOptions(
             options: formats,
             vibrate: true,

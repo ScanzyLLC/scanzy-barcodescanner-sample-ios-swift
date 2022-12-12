@@ -41,13 +41,15 @@ Note: Although it's not harmful to call ScanzyBSLicense.setLicense multiple time
 In your view controller, need to implement protocol ViewController ScanzyBarcodeScannedProtocolDelegate
 
 ```swift
-class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
-   func getBarcode(_ barcode: String) {
-       //your actual business logic to deal with barcode.
+class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate  {
+   
+    func getBarcode(_ barcode: String, barcodeType: String) {
+        //your actual business logic to deal with barcode and its type
     }
-
 ...
 }
+
+
 ```
 
 In the specific place, such as button click in the view, launch the scan view:

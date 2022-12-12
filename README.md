@@ -9,7 +9,7 @@ native ios sample to use ScanzyBarcodeScannerSDK
 Add below pod to the Podfile under your project root folder, (create the Podfile file if it doesn't exist)
 
 ```
-pod 'ScanzyBarcodeScannerSDK', '~> 0.0.2'
+pod 'ScanzyBarcodeScannerSDK', '~> 0.0.3'
 ```
 
 

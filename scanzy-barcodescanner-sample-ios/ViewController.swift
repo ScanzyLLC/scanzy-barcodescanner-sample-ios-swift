@@ -27,13 +27,13 @@ class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
     
     @IBAction func barcode_scan(_ sender: Any) {
         
-        let formats:ScanzyBSBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE, .QRCode]
-        let barcodeOptions = ScanzyBSBarcodeOptions(
-            options: formats,
-            vibrate: true,
-            beep: true,
-            autoZoom:true,
-            scanCropRectOnly: true)
+        let formats:ScanzyBarcodeFormat = [.Code128, .Code39, .UPCA, .UPCE, .QRCode]
+        let barcodeOptions = ScanzyBarcodeOptions(
+            options: true,
+            enableBeep: true,
+            enableAutoZoom: true,
+            enableScanCropRectOnly: true,
+            formats: formats)
         
         ScanzyBarcodeManager.scan(barcodeOptions, presentedBy: self, barcodeResultDelegate: self)
     }

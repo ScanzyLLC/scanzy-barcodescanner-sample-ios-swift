@@ -1,5 +1,11 @@
-# scanzy-barcodescanner-sample-android-ios
+# scanzy-barcodescanner-sample-ios-swift
 native ios sample to use ScanzyBarcodeScannerSDK
+
+## Environment Setup
+
+- To develop iOS app, you need to use [XCode](https://developer.apple.com/xcode/)
+- ScanzyBarcodeScannerSDK is delivered via CocoaPods, one of the most popular iOS package managers, if you haven't setup CocoaPods, check the official site for more details.
+[CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 
 
 ## Get Started

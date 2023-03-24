@@ -79,8 +79,6 @@ import ScanzyBarcodeScannerSDK
  }
 ```
 
-That is all you need to use ScanzyBarcodeScannerSDK, happy coding :joy:
-
 ## API Specification
 
 Below gives you more details about the parameters:

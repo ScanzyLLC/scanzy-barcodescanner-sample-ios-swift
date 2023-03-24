@@ -1,14 +1,15 @@
 # scanzy-barcodescanner-sample-ios-swift
-native ios sample to use ScanzyBarcodeScannerSDK
+native ios sample to use ScanzyBarcodeScannerSDK which implements the barcode capture capabilities of the ScanzyBarcodeScannerSDK for iOS and Android. It supports reading a large number of different barcode symbologies, such as Code39, Code93, Code128, Codabar, UPC-A, UPC-E, EAN-8, EAN-13, ITF, QRCode, Aztec, PDF-417, Data Matrix, etc.
 
-## Environment Setup
+
+## Prerequisites
 
 - To develop iOS app, you need to use [XCode](https://developer.apple.com/xcode/)
 - ScanzyBarcodeScannerSDK is delivered via CocoaPods, one of the most popular iOS package managers, if you haven't setup CocoaPods, check the official site for more details.
 [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 
 
-## Get Started
+## Installation
 
 ### Install ScanzyBarcodeScannerSDK
 
@@ -21,7 +22,7 @@ pod 'ScanzyBarcodeScannerSDK', '~> 0.0.6'
 and then run: pod install --repo-update 
 on your terminal on the root folder of project.
 
-### Start to scan. (swift code example)
+### Quick Start
 
 1. In your app's entry point, such as application func in AppDelegate, set the license key you obtained from Scanzy.
 

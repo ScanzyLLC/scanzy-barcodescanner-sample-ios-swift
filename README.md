@@ -1,11 +1,11 @@
 # scanzy-barcodescanner-sample-ios-swift
-native ios sample to use ScanzyBarcodeScannerSDK which implements the barcode capture capabilities of the ScanzyBarcodeScannerSDK for iOS and Android. It supports reading a large number of different barcode symbologies, such as Code39, Code93, Code128, Codabar, UPC-A, UPC-E, EAN-8, EAN-13, ITF, QRCode, Aztec, PDF-417, Data Matrix, etc.
+Native ios sample to use ScanzyBarcodeScannerSDK, which implements the barcode capture capabilities of the ScanzyBarcodeScannerSDK for iOS and Android. It supports reading a large number of different barcode symbologies, such as Code39, Code93, Code128, Codabar, UPC-A, UPC-E, EAN-8, EAN-13, ITF, QRCode, Aztec, PDF-417, Data Matrix, etc.
 
 
 ## Prerequisites
 
-- To develop iOS app, you need to use [XCode](https://developer.apple.com/xcode/)
-- ScanzyBarcodeScannerSDK is delivered via CocoaPods, one of the most popular iOS package managers, if you haven't setup CocoaPods, check the official site for more details.
+- To develop an iOS app, you need to use [XCode](https://developer.apple.com/xcode/)
+- ScanzyBarcodeScannerSDK is delivered via CocoaPods, one of the most popular iOS package managers, if you haven't setup CocoaPods, check out the official site for more details.
 [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
 
 
@@ -13,14 +13,14 @@ native ios sample to use ScanzyBarcodeScannerSDK which implements the barcode ca
 
 ### Install ScanzyBarcodeScannerSDK
 
-Add below pod to the Podfile under your project root folder, (create the Podfile file if it doesn't exist)
+Add the below pod to the Podfile under your project root folder, (create the Podfile file if it doesn't exist).
 
 ```
 pod 'ScanzyBarcodeScannerSDK', '~> 0.0.6'
 ```
 
-and then run: pod install --repo-update 
-on your terminal on the root folder of project.
+Then run: pod install --repo-update 
+on your terminal in the root folder of your project.
 
 ### Quick Start
 
@@ -30,7 +30,7 @@ on your terminal on the root folder of project.
 ScanzyBarcodeManager.setLicense("your-valid-licensekey")
 ```
 
-For example, the code in the sample app:
+For example, the code in the sample app is:
 
 ```swift
    import ScanzyBarcodeScannerSDK
@@ -45,9 +45,9 @@ For example, the code in the sample app:
 
 Note: Although it's not harmful to call ScanzyBarcodeManager.setLicense multiple times, even on every single scan, it's better to call it just once in your app's entry point.
 
-2. In your app's specific place, such as button click where you need to trigger the barcode scan. add below code:
+2. Add the below code in a specific place in your app, such as a button click where you need to trigger a barcode scan:
 
-In your view controller, need to implement protocol ViewController ScanzyBarcodeScannedProtocolDelegate
+In your view controller, you need to implement protocol ViewController ScanzyBarcodeScannedProtocolDelegate
 
 ```swift
 class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
@@ -59,7 +59,7 @@ class ViewController: UIViewController,ScanzyBarcodeScannedProtocolDelegate {
 }
 ```
 
-In the specific place, such as button click in the view, launch the scan view:
+In a specific place, such as a button click, launch the scan view:
 
 ```swift
 import ScanzyBarcodeScannerSDK
@@ -81,7 +81,7 @@ import ScanzyBarcodeScannerSDK
 
 ## API Specification
 
-Below gives you more details about the parameters:
+Below are more details about the parameters:
 
 The definition of ScanzyBarcodeFormat:
 
@@ -119,7 +119,7 @@ typedef NS_OPTIONS(NSInteger, ScanzyBarcodeFormat) {
 } NS_SWIFT_NAME(ScanzyBSBarcodeFormat);
 
 ```
-Note: to set the formats you only interested, although you can add ALL formats, it definitely would impact the performance.
+Note: Set only the formats you are interested in. You can add ALL formats, but it would impact performance.
 
 
 The ScanzyBarcodeOptions is defined as:
@@ -151,11 +151,11 @@ The ScanzyBarcodeOptions is defined as:
 
 @end
 ```
-enableVibration: vibrate your phone when barcode detected.<br>
+enableVibration: vibrate your phone when a barcode is detected.<br>
 
-enableBeep: play the beep sound when barcode detected.<br>
+enableBeep: play a beep sound when a barcode is detected.<br>
 
-enableAutoZoom: the library will zoom in/out automatcially to scan the barcode.<br>
+enableAutoZoom: the library will zoom in/out automatcially to scan a barcode.<br>
 
 enableScanCropRectOnly: only scan the view finder area.<br>
 

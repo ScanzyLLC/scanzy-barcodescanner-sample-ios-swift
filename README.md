@@ -122,7 +122,7 @@ typedef NS_OPTIONS(NSInteger, ScanzyBarcodeFormat) {
 Note: Set only the formats you are interested in. You can add ALL formats, but it would impact performance.
 
 
-The ScanzyBarcodeOptions is defined as:
+ScanzyBarcodeOptions is defined as:
 
 ```objective-c
 @interface ScanzyBarcodeOptions : NSObject

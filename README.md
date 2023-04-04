@@ -24,7 +24,7 @@ on your terminal in the root folder of your project.
 
 ### Quick Start
 
-1. In your app's entry point, such as application func in AppDelegate, set the license key you obtained from Scanzy.
+1. In your app's entry point, such as application func in AppDelegate, set the license key you obtained from [Scanzy](https://scanzy.com) for free trial.
 
 ```swift
 ScanzyBarcodeManager.setLicense("your-valid-licensekey")
@@ -37,7 +37,7 @@ For example, the code in the sample app is:
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        ScanzyBarcodeManager.setLicense("BdyCh9eyxw$9#k2qX79Z") //NOTE: BdyCh9eyxw$9#k2qX79Z is just a 7 days free trial key, you should purchase a valid key from Scanzy
+        ScanzyBarcodeManager.setLicense("your-valid-licensekey")
         return true
     }
     
@@ -151,12 +151,12 @@ ScanzyBarcodeOptions is defined as:
 
 @end
 ```
-enableVibration: vibrate your phone when a barcode is detected.<br>
 
-enableBeep: play a beep sound when a barcode is detected.<br>
+|     Parameter    |   Description         | 
+| ------------- |:-------------:| 
+| enableVibration      | vibrate your phone when a barcode is detected |
+| enableBeep      |   play a beep sound when a barcode is detected    |  
+| enableAutoZoom |   the library will zoom in/out automatcially to scan a barcode    |   
+| enableScanCropRectOnly |   only scan the view finder area    |   
+| formats |   the barcode formats    |   
 
-enableAutoZoom: the library will zoom in/out automatcially to scan a barcode.<br>
-
-enableScanCropRectOnly: only scan the view finder area.<br>
-
-formats: the barcode formats.<br>
